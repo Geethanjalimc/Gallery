@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>gallery</title>
+        <link rel="stylesheet" href="anju.css">
+       <!--add fontawesome for icons-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+    <body>
+        <div class="wrapper">
+            <nav><!-- nav bar mmenu-->
+                <div class="items">
+                    <input type="checkbox" id="check">
+                    <!--importing menu bar icon from fontawesome-->
+                    <label for="check" class="checkbtn" > <i class="fa fa-bars"></i></label> 
+                    <div class="heading">
+                        <span class="item active" data-name="all" >All</span>
+                        <span class="item" data-name="Abstract">Abstract</span>
+                        <span class="item" data-name="Portrait" >Portrait</span>
+                        <span class="item" data-name="Nature">Nature</span>
+                        <span class="item"  ><a href="https://aartofhs.wordpress.com/"  style="text-decoration: none;" > Blog</a></span>
+                    </div>
+              </div>
+              <div> 
+                  <!--signup button-->
+                  <span class="item" id="btnn" onclick="document.getElementById('11').style.display='block'"> <button type="submit" >Sign up</button></span>            
+              </div>
+            </nav>
+            <!--signup form-->
+            <div id="11" class="modal">
+                <form class="mod-content">
+                    <div class="container">
+                        
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+        
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+        
+                        <button type="submit">Login</button>
+                        <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+                    <div class="container" style="background-color:#f1f1f1">
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                      </div>
+                </form>
+            </div>
+               
+            <div class="gallery">
+                <div class="image" data-name="Nature" ><span><img src="img/img1.jpeg" alt="img1"><p class="name"> Name : br> discription : </p></span></div>
+                <div class="image" data-name="Portrait" ><span><img src="img/img2.jpeg" alt="img2"> </span></div>
+                <div class="image" data-name="Portrait" ><span><img src="img/img3.jpeg" alt="img3"></span></div>
+                <div class="image" data-name="Nature" ><span><img src="img/img4.jpeg" alt="img4"></span></div>
+                <div class="image" data-name="Nature"  ><span><img src="img/img5.jpeg" alt="img5"></span></div>
+                <div class="image" data-name="Abstract"><span><img src="img/img6.jpeg" alt="img6"></span></div>
+                <div class="image" data-name="Nature" ><span><img src="img/img15.jpeg" alt="img7"></span></div>
+                <div class="image" data-name="Abstract" ><span><img src="img/img8.jpeg" alt="img8"></span></div>
+                <div class="image" data-name="Abstract"><span><img src="img/img16.jpeg" alt="img9"></span></div>
+                <div class="image" data-name="Nature" ><span><img src="img/img10.jpeg" alt="img10"></span></div>
+                <div class="image" data-name="Abstract" ><span><img src="img/img11.jpeg" alt="img11"></span></div>
+                <div class="image" data-name="Nature" ><span><img src="img/img12.jpeg" alt="img9"><p class="name"> Name : br> discription : </p></span></div>
+                <div class="image" data-name="Portrait" ><span><img src="img/img13.jpeg" alt="img10"> </span></div>
+                <div class="image" data-name="Portrait" ><span><img src="img/img14.jpeg" alt="img11"></span></div>
+                <div class="image" data-name="Nature" ><span><img src="img/img9.jpeg" alt="img12"></span></div>
+                <div class="image" data-name="Nature"  ><span><img src="img/img7.jpeg" alt="img13"></span></div>
+                <div class="image" data-name="Abstract"><span><img src="img/img17.jpeg" alt="img14"></span></div>
+        </div>
+        <!-- image preview/ pop up-->
+        <div class="preview">   
+            <div class="close">               
+                <span class="icon fa fa-remove" id="iconremove"></span><!--close button *-->
+               </div>       
+            <div class="image-box">
+                <img src="WhatsApp Image 2021-10-05 at 6.39.24 PM.jpeg" alt="imag">
+            </div>
+            <div class="details" >
+                <p> Name<br> Price</p>
+            </div>
+        </div>
+        <!--to high light the pop up and adding shadow-->
+        <div class="shadow"></div>
+
+        <!-- linking jav script file-->
+        <script src="anju.js"></script>
+
+    </body>
+
+</html>
